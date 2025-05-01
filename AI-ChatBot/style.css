@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.chat-container {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    overflow: auto;
+}
+
+.user-chat-box {
+    width: 60%;
+    position: relative;
+    left: 40%;
+   
+
+}
+
+.user-chat-area {
+    width: 90%;
+    padding: 20px;
+    background-image: linear-gradient(#7f00ff,#e100ff);
+    color: aliceblue;
+    border-radius: 40px 0px 40px 40px;
+    box-shadow: 2px 2px 10px white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.ai-chat-box {
+    width: 60%;
+    position: relative;
+}
+
+.ai-chat-area {
+    width: 90%;
+    padding: 20px;
+    background-image:linear-gradient(#1ed2f1,#e100ff);
+    position: relative;
+    left: 10%;
+    color: aliceblue;
+    border-radius: 0px 40px 40px 40px;
+    box-shadow: 2px 2px 10px white;
+
+
+}
+
+#userImage {
+    position: absolute;
+    right: 0;
+    /* filter: drop-shadow(2px 2px 10px white); */
+    margin-left: 10px;
+}
+
+#aiImage {
+    position: absolute;
+    left: 0;
+    filter: drop-shadow(2px 2px 10px white);
+    margin-left: 10px;
+}
+
+.prompt-area {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.prompt-area input {
+    width: 50%;
+    height: 80px;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    color: rgb(250, 251, 252);
+    font-size: 20px;
+    box-shadow: 2px 2px 10px white;
+}
+
+.prompt-area button {
+    width: 60px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    box-shadow: 2px 2px 10px white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.prompt-area button:hover {
+    background-color: rgb(36, 34, 34);
+
+}
+
+.chooseimg{
+    width: 30%;
+    border-radius: 30px;
+}
+.choose{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

@@ -1,0 +1,93 @@
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+label{
+  color: white;
+  font-size: 20px;
+}
+
+html, 
+body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background:  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("background.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+  backdrop-filter: blur;
+
+  /* background-color: #FFF; */
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 10px rgb(206, 207, 212);
+  backdrop-filter: blur(10px);
+}
+
+.container > h1{
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+
+button{
+  background-color: rgb(78, 231, 252);
+  border: none;
+  font-size: 23px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+span{
+  font-size: 20px;
+  color: white;
+}
+span a{
+  color: white;
+}
+h1{
+  font-size: 80px;
+  color: white;
+}
